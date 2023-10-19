@@ -1,0 +1,83 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="This is the solution for newsletter sign-up form with success message">
+ 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+   <!-- CSS -->
+  <link rel="stylesheet" href="styles.css"> 
+  <link rel="stylesheet" href="media-queries.css">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+   <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+ <!-- Main -->
+<body>
+
+<!-- Sign-up form start -->
+<main>
+  <div class="left-container">
+    <div class="description">
+    <h1>
+      Stay updated!
+    </h1>
+    <p>
+      Join 60,000+ product managers receiving monthly <br class = "break">
+      updates on:
+    </p>
+    <div class="benefits">
+    <ul> 
+      <li><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" aria-hidden="true"/></g></svg>Product discovery and building what matters</li>
+      <li><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" aria-hidden="true"/></g></svg>Measuring to ensure updates are a success</li>
+      <li><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" aria-hidden="true"/></g></svg>And much more!</li>
+    </ul>
+  </div>
+  </div>
+    <div class="email-form">
+      <label for="Email">Email address </label> 
+      <input type="email" placeholder="email@company.com" id = "email">
+      <span id = "error">Valid email required</span>
+      <button id = "submit-btn">Subscribe to monthly newsletter</button>
+    </div>
+  </div>
+  <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+  
+</main>
+
+<!-- Sign-up form end -->
+
+<!-- Success message start -->
+<div class="success-msg hidden">
+  <img src="./assets/images/icon-success.svg" alt="">
+  <h2>
+    Thanks for subscribing!
+  </h2>
+  <p>
+  A confirmation email has been sent to
+  <span class = "submitted-email">ash@loremcompany.com.</span> please open 
+  it and click the button inside to confirm your subscription.
+</p>
+  <button class = "dismiss-msg">Dismiss message</button> 
+</div>
+ <!-- Success message end -->
+
+
+
+
+  <!-- JavaScript -->
+<script src="index.js"></script>
+<footer>
+  <div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> | 
+  Coded by <a href="#">@arielleandrotech</a>.
+</div>
+</footer>
+</body>
+
+</html>

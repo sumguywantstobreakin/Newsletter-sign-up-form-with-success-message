@@ -1,0 +1,206 @@
+ :root {
+    --tomato: hsl(4, 100%, 67%);
+    --darkSlateGrey: hsl(234, 29%, 20%);
+    --charcoalGrey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+    --gradientPink: hsl(350, 86%, 66%);
+    --gradientOrange: hsl(23, 91%, 57%);
+    font-size: 16px;
+   
+ }
+ 
+ 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--charcoalGrey);
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    flex-direction: column;
+    
+ }
+
+ main {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
+    color: var(--charcoalGrey);
+    border-radius: 20px 30px 10px 10px;
+    border: none;
+ 
+ }
+.hidden {
+   display: none !important;
+}
+.left-container {
+    padding: 70px 40px 40px 60px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+main img {
+   flex: 1 0 40%;
+   object-fit: cover;
+   padding: 20px;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+.left-container p {
+    margin: 20px 0px 30px 0px;
+}
+ul {
+   line-height: 35px;
+   list-style: none;
+   
+}
+
+ul li {
+   display: flex;
+   align-items: center;
+   color: var(--darkSlateGrey);
+   font-weight: 400;
+}
+
+svg {
+   margin-right: 15px;
+}
+
+.email-form {
+   position: relative;
+   margin-top: 40px;
+   display: flex;
+   flex-direction: column;
+   
+   
+}
+
+.email-form.error input {
+   color: var(--tomato);
+   border-color: var(--tomato);
+   
+}
+label {
+   font-size: 0.7rem;
+   color: var(--darkSlateGrey);
+   font-weight: 700; 
+}
+
+.email-form span {
+   color: var(--tomato);
+   position: absolute;
+   right: 0;
+   font-weight: 700;
+   font-size: 0.7rem;
+   display: none;
+}
+
+.email-form.error span {
+   display: block;
+}
+input {
+   padding: 15px;
+   border-radius: 5px;
+   border: 1px solid var(--grey);
+   margin-top: 7px;
+}
+
+input:focus {
+   outline: 2px dotted var(--darkSlateGrey);
+}
+
+.email-form button {
+   padding: 17px;
+   margin-top: 25px;
+   background-color: var(--darkSlateGrey);
+   color: var(--white);
+   font-weight: 700;
+   border: none;
+   border-radius: 5px;
+   width: 100%;
+}
+button:hover {
+   cursor: pointer;
+   transition: 0.4s;
+   background: linear-gradient(90deg, var(--gradientPink), var(--gradientOrange));
+   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.829);
+}
+
+button:focus {
+   outline: 2px dotted var(--darkSlateGrey);
+   transition: 0.2s;
+}
+
+.success-msg {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 30px 35px 30px 30px;
+  padding: 0px 65px 0px 70px;
+  width: 500px;
+  height: 500px;
+  color: var(--darkSlateGrey);
+}
+
+.success-msg h2 {
+   font-size: 3.3rem;
+   margin-bottom: 25px;
+   line-height: 55px;
+}
+
+.success-msg img {
+   margin-bottom: 30px;
+}
+
+.success-msg p {
+   line-height: 25px;
+}
+
+.dismiss-msg {
+   padding: 17px;
+   margin-top: 37px;
+   background-color: var(--darkSlateGrey);
+   color: var(--white);
+   font-weight: 700;
+   border: none;
+   border-radius: 5px;
+   width: 100%;
+}
+
+
+footer {
+   height: 2rem;
+   margin-top: 25px;
+ 
+}
+
+.attribution {
+   text-align: center;
+   color: var(--white);
+   font-size: 0.8rem;
+   
+}
+
+a {
+   text-decoration: none;
+   color: var(--white);
+}
+
+a:hover {
+   color: var(--tomato);
+   text-decoration: underline;
+}
+
