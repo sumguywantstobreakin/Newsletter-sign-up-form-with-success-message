@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/sumguywantstobreakin/Newsletter-sign-up-form-with-success-message)
+- Live Site URL: [Live](https://sumguywantstobreakin.github.io/Newsletter-sign-up-form-with-success-message/)
 
 
 ### Built with
